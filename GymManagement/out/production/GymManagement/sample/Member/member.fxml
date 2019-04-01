@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Member.Member">
+  <panes>
+    <TitledPane animated="false" text="Member Informations">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="71.0" text="Fat" underline="true" />
+                  <Label layoutX="22.0" layoutY="108.0" text="Biceps" underline="true" />
+                  <Label layoutX="22.0" layoutY="135.0" text="Leg" underline="true" />
+                  <Label layoutX="22.0" layoutY="166.0" text="Shoulder" underline="true" />
+                  <Label layoutX="22.0" layoutY="197.0" text="Chest" underline="true" />
+                  <Label layoutX="24.0" layoutY="229.0" text="Waistlane" underline="true" />
+                  <Label fx:id="height" layoutX="164.0" layoutY="42.0" prefHeight="17.0" prefWidth="32.0" />
+                  <Label fx:id="fat" layoutX="167.0" layoutY="71.0" prefHeight="17.0" prefWidth="33.0" />
+                  <Label fx:id="biceps" layoutX="166.0" layoutY="108.0" prefHeight="17.0" prefWidth="41.0" />
+                  <Label fx:id="leg" layoutX="166.0" layoutY="135.0" prefHeight="17.0" prefWidth="39.0" />
+                  <Label fx:id="shoulder" layoutX="166.0" layoutY="166.0" prefHeight="17.0" prefWidth="36.0" />
+                  <Label fx:id="chest" layoutX="166.0" layoutY="197.0" prefHeight="17.0" prefWidth="40.0" />
+                  <Label fx:id="waistlane" layoutX="166.0" layoutY="229.0" prefHeight="17.0" prefWidth="37.0" />
+                  <Label fx:id="reaminingtime" layoutX="426.0" layoutY="135.0" />
+                  <Label layoutX="20.0" layoutY="263.0" text="Age" underline="true" />
+                  <Label fx:id="age" layoutX="166.0" layoutY="263.0" />
+                  <Label layoutX="270.0" layoutY="13.0" text="Welcome" textFill="#2e2768">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Label>
+                  <Label layoutX="23.0" layoutY="42.0" text="Height" underline="true" />
+                  <Label fx:id="welcome" layoutX="299.0" layoutY="20.0" />
+                  <Label fx:id="ramainpayment" layoutX="407.0" layoutY="175.0" />
+                  <Label fx:id="lastdate" layoutX="20.0" layoutY="292.0" text="Last Measure Date" underline="true" />
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane animated="false" text="Details">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                   <TableView fx:id="tableview" layoutX="12.0" layoutY="14.0" prefHeight="269.0" prefWidth="575.0">
+                       <columns>
+                           <TableColumn fx:id="tmemberid" prefWidth="75.0" text="Memberid" />
+                           <TableColumn fx:id="theight" prefWidth="46.0" text="Height" />
+                           <TableColumn fx:id="tfat" prefWidth="40.0" text="Fat" />
+                           <TableColumn fx:id="tweight" prefWidth="47.0" text="Weight" />
+                           <TableColumn fx:id="tbiceps" prefWidth="49.0" text="Biceps" />
+                           <TableColumn fx:id="twaistlane" prefWidth="66.0" text="Waistlane" />
+                           <TableColumn fx:id="tleg" prefWidth="36.0" text="Leg" />
+                           <TableColumn fx:id="tshoulder" prefWidth="65.0" text="Shoulder" />
+                           <TableColumn fx:id="tchest" prefWidth="50.0" text="Chest" />
+                           <TableColumn fx:id="tage" prefWidth="108.0" text="Date" />
+                       </columns>
+                   </TableView>
+
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+  </panes>
+</Accordion>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="856.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Staff.PaymentOperations">
+   <children>
+      <Accordion layoutX="-1.0" layoutY="64.0" prefHeight="336.0" prefWidth="856.0">
+        <panes>
+          <TitledPane animated="false" prefHeight="289.0" prefWidth="787.0" text="New Payment Record">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="memberid" layoutX="181.0" layoutY="34.0" prefWidth="150.0" />
+                        <Label layoutX="30.0" layoutY="38.0" text="Member id" />
+                        <Label layoutX="30.0" layoutY="71.0" text="Total Payment" />
+                        <Label layoutX="30.0" layoutY="105.0" text="Start Date" />
+                        <Label layoutX="30.0" layoutY="138.0" text="Finish Date" />
+                        <Label layoutX="30.0" layoutY="170.0" text="Duration" />
+                        <DatePicker fx:id="startdate" layoutX="169.0" layoutY="101.0" />
+                        <DatePicker fx:id="finishdate" layoutX="169.0" layoutY="134.0" />
+                        <Button layoutX="279.0" layoutY="219.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+                        <TextField fx:id="totalpayment" layoutX="182.0" layoutY="67.0" />
+                        <TextField fx:id="duration" layoutX="194.0" layoutY="175.0" />
+                     </children>
+                  </AnchorPane>
+               </content></TitledPane>
+
+          <TitledPane animated="false" text="Payment Operations">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <DatePicker fx:id="paymentdate" layoutX="111.0" layoutY="121.0" />
+                        <ComboBox fx:id="memberid2" layoutX="130.0" layoutY="26.0" prefWidth="150.0" />
+                        <Label layoutX="28.0" layoutY="30.0" text="Member id" />
+                        <Label layoutX="28.0" layoutY="78.0" text="Amount " />
+                        <Label layoutX="28.0" layoutY="125.0" text="Payment Date" />
+                        <Button layoutX="250.0" layoutY="162.0" mnemonicParsing="false" onAction="#pay" text="Pay" />
+                        <TextField fx:id="amount" layoutX="131.0" layoutY="74.0" />
+                     </children>
+                  </AnchorPane>
+               </content></TitledPane>
+            <TitledPane animated="false" layoutX="10.0" layoutY="35.0" prefHeight="350.0" prefWidth="763.0" text="Status">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableview" layoutX="35.0" layoutY="14.0" onMouseClicked="#showDetails" prefHeight="200.0" prefWidth="500.0">
+                          <columns>
+                            <TableColumn fx:id="tmemberid" prefWidth="110.0" text="Memberid" />
+                            <TableColumn fx:id="ttotalpayment" prefWidth="90.0" text="Total Payment" />
+                              <TableColumn fx:id="tpaid" prefWidth="111.0" text="Paid " />
+                              <TableColumn fx:id="tpaydate" prefWidth="210.0" text="Pay Date" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content></TitledPane>
+        </panes>
+      </Accordion>
+      <Button layoutX="14.0" layoutY="23.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Label layoutX="344.0" layoutY="18.0" prefHeight="25.0" prefWidth="130.0" text="WELCOME" textFill="#650e0e" underline="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

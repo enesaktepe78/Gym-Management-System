@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="314.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Admin.MemberOperations.UpdateMember">
+    <children>
+        <TextField fx:id="name" layoutX="143.0" layoutY="32.0" />
+        <TextField fx:id="surname" layoutX="143.0" layoutY="71.0" />
+        <TextField fx:id="phone" layoutX="143.0" layoutY="112.0" />
+        <TextField fx:id="email" layoutX="143.0" layoutY="145.0" />
+        <Label layoutX="39.0" layoutY="36.0" text="Name" />
+        <Label layoutX="39.0" layoutY="75.0" text="Surname" />
+        <Label layoutX="39.0" layoutY="116.0" text="Phone" />
+        <Label layoutX="41.0" layoutY="149.0" text="Email" />
+        <Label layoutX="36.0" layoutY="184.0" text="Username" />
+        <TextField fx:id="username" layoutX="143.0" layoutY="180.0" />
+        <Label layoutX="38.0" layoutY="223.0" text="Password" />
+        <TextField fx:id="password" layoutX="143.0" layoutY="219.0" />
+        <Button layoutX="240.0" layoutY="271.0" mnemonicParsing="false" onAction="#update" text="Update" />
+    </children>
+</AnchorPane>

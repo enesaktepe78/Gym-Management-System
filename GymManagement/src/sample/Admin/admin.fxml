@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Admin.Admin">
+   <children>
+      <Button mnemonicParsing="false" onAction="#staff" prefHeight="95.0" prefWidth="100.0" text="Staff" />
+      <Button layoutY="95.0" mnemonicParsing="false" onAction="#trainer" prefHeight="95.0" prefWidth="100.0" text="Trainers" />
+      <Button layoutY="190.0" mnemonicParsing="false" onAction="#member" prefHeight="95.0" prefWidth="100.0" text="Members" />
+      <Label layoutX="232.0" layoutY="98.0" prefHeight="89.0" prefWidth="290.0" text="WELCOME">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

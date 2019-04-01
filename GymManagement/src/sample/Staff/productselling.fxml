@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Staff.ProductSelling">
+
+    <ComboBox fx:id="memberid" layoutX="124.0" layoutY="27.0" prefWidth="150.0" />
+    <TextField fx:id="amount" layoutX="125.0" layoutY="110.0" />
+    <Label layoutX="32.0" layoutY="114.0" text="Amount" />
+    <DatePicker fx:id="date" layoutX="126.0" layoutY="156.0" prefHeight="25.0" prefWidth="147.0" />
+    <Label layoutX="32.0" layoutY="154.0" text="Date" />
+    <Label layoutX="32.0" layoutY="31.0" text="Memberid" />
+    <ComboBox fx:id="productid" layoutX="124.0" layoutY="67.0" prefWidth="150.0" />
+    <Label layoutX="30.0" layoutY="71.0" text="Productid" />
+    <Button layoutX="221.0" layoutY="202.0" mnemonicParsing="false" onAction="#sell" prefHeight="25.0" prefWidth="52.0" text="Sell" />
+   <TableView fx:id="tableview" layoutX="339.0" layoutY="23.0" prefHeight="200.0" prefWidth="497.0">
+     <columns>
+       <TableColumn fx:id="tmemberid" prefWidth="115.0" text="Memberid" />
+       <TableColumn fx:id="tproductid" prefWidth="128.0" text="Productid" />
+         <TableColumn fx:id="tamount" prefWidth="88.0" text="Amount" />
+         <TableColumn fx:id="tdate" prefWidth="165.0" text="Date" />
+     </columns>
+   </TableView>
+   <Button layoutX="19.0" layoutY="261.0" mnemonicParsing="false" onAction="#back" text="Back" />
+</AnchorPane>
