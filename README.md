@@ -12,3 +12,6 @@ MAIN FUNCTIONS OF THE MANAGEMENT SYSTEM
 9.	Only trainers can add work schedule and members just can see the schedule. 
 10.	Only managers can see and edit the salary table.  
 
+Database Schema
+
+![](relational%20schema.png)
